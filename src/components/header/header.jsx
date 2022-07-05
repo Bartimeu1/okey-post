@@ -45,7 +45,7 @@ function Header() {
                     </div>
                     <a href="#" className="header__connection">Связаться с нами</a>
                 </div>
-                <div className="burger">
+                <div className={menuActive ? 'burger--active' : 'burger'}>
                     <div className="burger-content" onClick={() => setMenuActive(!menuActive)}>
                         <span></span>
                     </div>

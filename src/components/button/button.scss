@@ -1,0 +1,17 @@
+.button {
+    background: linear-gradient(90deg, #00C97B 0%, #00D981 96.96%);
+    box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2);
+    border-radius: 36px;
+    font-family: 'Gilroy-Extrabold';
+    display: inline-block;
+    font-size: 17px;
+    line-height: 18px;
+    padding: 20px 30px;
+    color: #FFFFFF;
+    transition: 0.3s;
+    &:hover {
+        color: #1F2428;
+        transition: 0.3s;
+        background: linear-gradient(90deg, #eab676 30%, #00D981 96.96%);
+    }
+}

@@ -2,9 +2,8 @@
     display: block;
     position: fixed;
     background: #fff;
-    height: 100vh;
-    width: 100vw;
     left: 0;
+    z-index: 2;
     &-list {
         position: fixed;
         left: 50%;
@@ -37,8 +36,10 @@
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(2px);
-    position: absolute;
+    position: fixed;
+    transition: all 0.3s ease 0s;
 }
 .burger__menu--inactive {
     display: none;
+    transition: all 0.3s ease 0s;
 }
