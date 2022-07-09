@@ -15,7 +15,7 @@
         justify-content: center;
         background: linear-gradient(90deg, #f5fffa 50%, #adff2f 10%);
         box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2);
-        width: 200px;
+        width: 240px;
         height: 250px;
         border-radius: 10px;
         & li {
@@ -23,13 +23,19 @@
         }
     }
     &-link {
-        font-size: 20px;
+        font-size: 23px;
         transition: 0.2s;
         color: #1F2428;
         &:hover {
             color: #000;
             transition: 0.2s;
         }
+    }
+    &-profile {
+        display: none;
+    }
+    &-connection {
+        display: none;
     }
 }
 .blur {
@@ -42,4 +48,20 @@
 .burger__menu--inactive {
     display: none;
     transition: all 0.3s ease 0s;
+}
+@media (max-width: 720px) {
+    .burger__menu-profile {
+        display: block;
+    }
+    .burger__menu-list {
+        height: 300px;
+    }
+}
+@media (max-width: 450px) {
+   .burger__menu-connection {
+    display: block;
+   } 
+   .burger__menu-list {
+    height: 330px;
+   }
 }
