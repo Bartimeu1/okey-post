@@ -50,6 +50,7 @@
 
 // Profit
 .profit {
+    margin-bottom: 70px;
     &-title {
         max-width: 477px;
         margin-bottom: 40px;
@@ -252,6 +253,66 @@
     justify-content: center;
 }
 
+// Delivery
+
+.delivery {
+    margin-bottom: 50px;
+    &__form {
+        box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
+        border-radius: 16px;
+        padding: 46px 50px 26px 35px;
+        &-title {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            color: #222222;
+            margin-bottom: 10px;
+        }
+        &-line {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: '';
+                background: #222222;
+                height: 1px;
+                width: 100%;
+                display: block;
+                bottom: -15px;
+            }
+        }
+        &-input {
+            border: none;
+            font-size: 16px;
+            line-height: 16px;
+            color: #222222;
+            font-weight: 300;
+            margin-left: 18px;
+        }
+        &-list {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin-bottom: 55px;
+            justify-content: space-around;
+        }
+    }
+    &-subtitle {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 36px;
+        color: #1F2428;
+        max-width: 760px;
+        margin-bottom: 30px;
+    }
+    &-title {
+        max-width: 820px;
+        margin-bottom: 20px;
+    }
+}
+
 // Media 
 @media (max-width: 1400px) {
     .product {
@@ -271,6 +332,13 @@
             &--left {
                 align-items: flex-end;
             }
+        }
+    }
+    .block {
+        &-title--small {
+            font-size: 25px !important;
+            max-width: 600px !important;
+            line-height: 33px !important;
         }
     }
 }
@@ -460,6 +528,13 @@
         max-width: 400px;
         line-height: 30px !important;
         margin-bottom: 20px;
+    }
+    .block {
+        &-title--small {
+            font-size: 20px !important;
+            max-width: 400px !important;
+            line-height: 24px !important;
+        }
     }
 }
 

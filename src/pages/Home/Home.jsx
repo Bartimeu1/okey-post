@@ -13,6 +13,7 @@ import 'swiper/components/pagination/pagination.min.css';
 // Components
 import Button from "../../components/button/button";
 import Title from "../../components/title/title";
+import Block from "../../components/block/block";
 
 // Images
 import bannerBg from "../../assets/images/banner.png";
@@ -29,6 +30,12 @@ import profitAdvantages4 from "../../assets/images/profitAdvantages4.svg";
 import flag1 from "../../assets/images/flag1.png";
 import flag2 from "../../assets/images/flag2.png";
 import jacket from "../../assets/images/jacket.png";
+import block1 from "../../assets/images/block1.png";
+import form1 from "../../assets/images/form1.svg";
+import form2 from "../../assets/images/form2.svg";
+import form3 from "../../assets/images/form3.svg";
+import form4 from "../../assets/images/form4.svg";
+import form5 from "../../assets/images/form5.svg";
 
 SwiperCore.use([ Navigation ]);
 
@@ -100,14 +107,14 @@ function Home() {
             </div>
             <div className="profit__product product">
               <Swiper
-              modules={[ Navigation ]}
-              navigation={{
-                nextEl: '.product-next-button',
-                prevEl: '.product-prev-button',
-              }}
-              spaceBetween={400}
-              slidesPerView={1}
-              loop
+                modules={[ Navigation ]}
+                navigation={{
+                  nextEl: '.product-next-button',
+                  prevEl: '.product-prev-button',
+                }}
+                spaceBetween={400}
+                slidesPerView={1}
+                loop
                className="product__slider"
               >
                 <div className="product-next-button"></div>
@@ -159,6 +166,62 @@ function Home() {
                 <h3 className="profit__advantages-title">Огромный <br /> выбор товаров</h3>
               </div>
             </div>
+          </div>
+        </section>
+        <Block 
+          img={block1} 
+          titleClasses={'block-title block-title--small'} 
+          title='Поручите нашим мастерам шопинга оформить заказы в английских магазинах и освободите время для более важных дел.' 
+          subtitle='Такой способ покупки также подойдёт, если магазин принимает только английские карты.'
+        >
+        </Block>
+        <section className="delivery">
+          <div className="container delivery__container">
+            <Title classes={'title delivery-title'} text='OkeyPost удобная и быстрая доставка посылок из Великобритании '></Title>
+            <p className="delivery-subtitle">Рассчитайте стоимость доставки из Англии к вам домой. 
+              Мы получим ваши посылки на складе, при необходимости объединим несколько доставок в 
+              одну и отправим их к вам надежно упакованными.
+            </p>
+            <form className="delivery__form">
+              <div className="delivery__form-list">
+                <div className="delivery__form-item">
+                  <h5 className="delivery__form-title">Страна:</h5>
+                  <div className="delivery__form-line">
+                    <img src={form1} alt="icon" />
+                    <input className="delivery__form-input" type="text" id="userContry" name="userContry" placeholder="Россия" />
+                  </div>
+                </div>
+                <div className="delivery__form-item">
+                  <h5 className="delivery__form-title">Город:</h5>
+                  <div className="delivery__form-line">
+                    <img src={form2} alt="icon" />
+                    <input className="delivery__form-input" type="text" id="userCity" name="userCity" placeholder="Москва" />
+                  </div>
+                </div>
+                <div className="delivery__form-item">
+                  <h5 className="delivery__form-title">Индекс:</h5>
+                  <div className="delivery__form-line">
+                    <img src={form3} alt="icon" />  
+                    <input className="delivery__form-input" type="text" id="userIndex" name="userIndex" placeholder="Введите индекс" />
+                  </div>
+                </div>
+                <div className="delivery__form-item">
+                  <h5 className="delivery__form-title">Вес посылки:</h5>
+                  <div className="delivery__form-line">
+                    <img src={form4} alt="icon" />  
+                    <input className="delivery__form-input" type="text" id="userParcels" name="userParcels" placeholder="0,5" />
+                  </div>
+                </div>
+                <div className="delivery__form-item">
+                  <h5 className="delivery__form-title">Дополнительные услуги:</h5>
+                  <div className="delivery__form-line">
+                    <img src={form5} alt="icon" />  
+                    <input className="delivery__form-input" type="text" id="userServices" name="userServices" placeholder="Выберите услуги" />
+                  </div>
+                </div>
+              </div>
+              <Button text='Рассчитать'></Button>
+            </form>
           </div>
         </section>
       </>
