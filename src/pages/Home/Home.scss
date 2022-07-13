@@ -1,4 +1,6 @@
+// Banner
 .banner {
+    margin-bottom: 45px;
     &__container {
         padding: 0 15px;
         max-width: 90vw;
@@ -31,7 +33,7 @@
         font-size: 72px;
         line-height: 80px;
         color: #FFFFFF;
-        font-family: 'Gilroy-Bold';
+        font-weight: 600;
         margin-bottom: 8px;
         max-width: 700px;
     }
@@ -39,10 +41,300 @@
         font-size: 20px;
         line-height: 42px;
         color: #FFFFFF;
-        font-family: 'Gilroy-Light';
+        font-weight: 300;
         opacity: 80%;
         margin-bottom: 36px;
         max-width: 700px;
+    }
+}
+
+// Profit
+.profit {
+    &-title {
+        max-width: 477px;
+        margin-bottom: 40px;
+    }
+    &__filter {
+        margin: 0 auto 54px auto;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
+        border-radius: 16px;
+        &-item {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            cursor: pointer;
+            background: #fff;
+            border-radius: 10px;
+            padding: 24px 0;
+            &:hover {
+                background: #F2F6FC;
+            }
+        }
+        &-img {
+            margin-right: 17px;
+        }
+        &-title {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #1F2428;
+        }
+    }
+    &__advantages {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            position: relative;
+            padding: 20px 0;
+            flex: 0 0 25%;
+            &--last {
+                margin-right: 0;
+                &::after {
+                    display: none;
+                }
+            }
+            &::after {
+                content: '';
+                height: 50px;
+                width: 1px;
+                background: #C0C9D7;
+                position: absolute;
+                right: 10px;
+            }
+        }
+        &-img {
+            margin-right: 26px;
+        }
+        &-title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            color: #1F2428;
+        }
+    }
+
+}
+.profit__slider .swiper-container {
+    max-width: 1290px;
+}
+.profit__slider .next-button,
+.profit__slider .prev-button {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 5;
+    bottom: 50%;
+    height: 100%;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50%);
+    cursor: pointer;
+}
+.profit__slider .next-button{
+    right: 30px;
+    background-image: url('../../assets/images/slider-arrow.svg');
+}
+.profit__slider .prev-button{
+    left: 30px;
+    background-image: url('../../assets/images/slider-arrow-l.svg');
+}
+
+.product {
+    margin-bottom: 50px;
+    &__slide {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        &--middle {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    &-time {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 24px;
+        color: #1F2428;
+    }
+    &-economy {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 36px;
+        color: #1F2428;
+        & span {
+            color: #01CD7D;
+        }
+    }
+    &-title {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 36px;
+        color: #1F2428;
+        & span {
+            color: #01CD7D;
+        }
+    }
+    &__price {
+        background: #F2F6FC;
+        border-radius: 16px;
+        width: 400px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        &-flag {
+            margin-right: 28px;
+            padding: 34px 34px 34px;
+        }
+        &-title {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            color: #1F2428;
+        }
+        &-num {
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 36px;
+            color: #1F2428;
+            &--green {
+                color: #01CD7D;
+            }
+        }
+    }
+}
+.product .swiper-container {
+    padding-left: 30px;
+}
+.product__slider .product-next-button,
+.product__slider .product-prev-button {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 5;
+    bottom: 20px;
+    height: 50px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50%);
+    cursor: pointer;
+}
+.product__slider .product-next-button{
+    right: 200px;
+    background-image: url('../../assets/images/slider-arrow.svg');
+}
+.product__slider .product-prev-button{
+    left: 200px;
+    background-image: url('../../assets/images/slider-arrow-l.svg');
+}
+.product__slide--left,
+.product__slide--right {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+// Media 
+@media (max-width: 1400px) {
+    .product {
+        &-img {
+            width: 350px;
+        }
+        &__price {
+            &-flag {
+                margin-right: 10px;
+            }
+        }
+        & .swiper-container {
+            padding-left: 30px;
+            max-width: 1150px;
+        }
+        &__slide {
+            &--left {
+                align-items: flex-end;
+            }
+        }
+    }
+}
+
+@media (max-width: 1170px) {
+    .profit__advantages {
+        flex-wrap: wrap;
+        &-item {
+            flex: 0 0 50%;
+            &--adapt {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        &-title {
+            min-width: 155px;
+        }
+    }
+    .profit__slider .next-button{
+        right: 10px;
+    }
+    .profit__slider .prev-button{
+        left: 10px;
+    }
+    .product {
+        & .swiper-container {
+            padding-left: 40px;
+            max-width: 1000px;
+        }
+       &__price {
+        width: 300px;
+       } 
+       &-title {
+        font-size: 20px;
+        max-width: 300px;
+        line-height: 30px;
+       }
+    }
+}
+@media (max-width: 1035px) {
+    .product {
+        text-align: center;
+        &__slide {
+            flex-direction: column;
+            &--right,
+            &--left {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+    }
+    .product__slider .product-next-button,
+    .product__slider .product-prev-button {
+        bottom: 50%;
+    }
+    .product__slider .product-next-button {
+        right: 100px;
+    }
+    .product__slider .product-prev-button {
+        left: 100px; 
+    }
+    .product .swiper-container {
+        padding-left: 0;
     }
 }
 
@@ -52,27 +344,27 @@
             font-size: 50px;
             line-height: 60px;
             max-width: 600px;
+            margin-bottom: 20px;
         }
         &-subtitle {
-            font-size: 15px;
             opacity: 100%;
             line-height: 30px;
             opacity: 100%;
-            font-family: 'Gilroy-Regular';
+            max-width: 500px;
         }
         &-img {
             height: 450px;
             width: 450px;
             position: absolute;
-            top: 50%;
+            top: 100%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%,-100%);
             opacity: 90%;
         }
         &__text {
             text-align: center;
             align-items: center;
-            padding: 80px 0 60px 0;
+            padding: 80px 0 460px 0;
         }
         &__container {
             text-align: center;
@@ -81,32 +373,106 @@
         }
     }
 }
-@media (max-width: 550px) {
-    .banner {
+@media (max-width: 630px) {
+    .product {
+        text-align: center;
+        &__slide {
+            flex-direction: column;
+            &--right,
+            &--left {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &__price {
+            order: 1;
+        }
         &-title {
-            font-size: 40px;
-            line-height: 50px;
+            order: 2;
+            &--top {
+                margin-bottom: 30px;
+            }
         }
-        &-subtitle {
-            font-size: 12px;
-            font-family: 'Gilroy-Bold';
-            line-height: 20px;
+        &-economy {
+            margin-bottom: 30px;
         }
-        &-img {
-            height: 300px;
-            width: 300px;
+    }
+    .product__slider .product-next-button {
+        right: 10px;
+        display: none;
+    }
+    .product__slider .product-prev-button {
+        left: 10px;
+        display: none;
+    }
+}
+@media (max-width: 590px) {
+    .profit__advantages {
+        margin: 0 auto;
+        max-width: 350px;
+        justify-content: center;
+        &-item {
+            margin-bottom: 20px;
+            flex: 0 0 100%;
+            &--last {
+                margin-bottom: 0;
+            }
+            &::after {
+                bottom: -10px;
+                width: 100px;
+                height: 1px;
+                right: 50%;
+                transform: translate(50%,0);
+            }
+            &--adapt {
+                &::after {
+                    display: block;
+                }
+            }
         }
     }
 }
+
+@media (max-width: 520px) {
+    .banner {
+        &__text {
+            padding: 80px 0 380px 0;
+        }
+        &-title {
+            font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 15px;
+        }
+        &-subtitle {
+            line-height: 25px;
+            margin-bottom: 25px;
+            font-size: 15px;
+        }
+        &-img {
+            width: 100%;
+            max-width: 350px;
+            height: 100%;
+            max-height: 350px;
+        }
+    }
+    .profit-title {
+        font-size: 30px !important;
+        max-width: 400px;
+        line-height: 30px !important;
+        margin-bottom: 20px;
+    }
+}
+
 @media (max-width: 410px) {
     .banner {
         &-title {
             font-size: 30px;
-            line-height: 50px;
+            line-height: 40px;
         }
         &-subtitle {
             font-size: 12px;
             line-height: 20px;
+            max-width: 100%;
         }
     }
 }

@@ -4,8 +4,8 @@ import './header.scss';
 
 import BurgerMenu from "../burger/burgerMenu";
 
-import logo from '../../assets/images/logo.png';
-import user from '../../assets/images/user.png';
+import logo from '../../assets/images/logo.svg';
+import user from '../../assets/images/user.svg';
 
 function Header() {
     const [menuActive, setMenuActive] = useState(false);

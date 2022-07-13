@@ -1,7 +1,7 @@
 .header {
-    font-family: 'Gilroy-Bold';
     color: #1F2428;
     padding-top: 30px;
+    font-weight: 600;
     margin-bottom: 36px;
     &__container {
         display: flex;
@@ -51,8 +51,8 @@
         }
     }
     &__connection {
-        font-family: 'Gilroy-Extrabold';
         display: inline-block;
+        font-weight: 800;
         font-size: 13px;
         line-height: 18px;
         color: #FFFFFF;
