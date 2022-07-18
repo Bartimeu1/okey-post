@@ -1,0 +1,174 @@
+.footer {
+    padding: 82px 0 33px 0;
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__logo-img {
+        margin-bottom: 35px;
+    }
+    &__social {
+        &-link {
+            margin-right: 5px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &-item {
+            display: flex;
+            flex-direction: column;
+            margin-right: 200px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        &__menu {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 16px;
+            color: #1F2428;
+            margin-bottom: 15px;
+        }
+        &-link {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            color: #1F2428;
+            margin-bottom: 5px;
+            &:hover {
+                color: grey;
+            }
+        }
+    }
+    &__law {
+        margin: 92px auto 0 auto;
+        width: 100%;
+        text-align: center;
+        &-text {
+            margin: 0 auto;
+            width: 90%;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 20px;
+            color: #1F2428;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                top: -36px;
+                right: 0;
+                width: 100%;
+                height: 1px;
+                background: #C0C9D7;
+                border-radius: 36px;
+            }
+        }
+    }
+}
+@media (max-width: 1410px) {
+    .footer__container {
+        justify-content: space-around;
+    }
+    .footer__links-item {
+        margin-right: 70px;
+    }
+}
+@media (max-width: 1080px) {
+    .footer {
+        padding-top: 40px;
+        &__container {
+            flex-direction: column;
+        }
+        &__images {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        &__logo-img {
+            margin-bottom: 10px;
+        }
+        &__links {
+            justify-content: space-around;
+            &-item {
+                margin-right: 0;
+            }
+        }
+        &__law {
+            margin-top: 40px;
+            &::before {
+                top: -20px;
+            }
+        }
+    }
+}
+@media (max-width: 780px) {
+    .footer {
+        &__links {
+            flex-direction: column;
+            padding-left: 5vw;
+            &__menu {
+                display: none;
+                transition: all 0.3s ease 0s;
+                &--active {
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    transition: all 0.3s ease 0s;
+                }
+            }
+            &-item {
+                margin-bottom: 20px;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background-image: url('../../assets/images/line.svg');
+                    top: 5px;
+                    left: 170px;
+                    transform: rotate(90deg);
+                    height: 9px;
+                    width: 15px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+                &--active {
+                    display: block;
+                    position: relative;
+                    transition: all 0.3s ease 0s;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        background-image: url('../../assets/images/line.svg');
+                        top: 5px;
+                        left: 170px;
+                        transform: rotate(180deg);
+                        height: 9px;
+                        width: 15px;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        transition: all 0.3s ease 0s;
+                    }
+                }
+            }
+            &-title {
+                font-size: 23px;
+                margin-bottom: 20px;
+            }
+            &-link {
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

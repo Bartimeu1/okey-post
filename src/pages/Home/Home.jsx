@@ -31,11 +31,26 @@ import flag1 from "../../assets/images/flag1.png";
 import flag2 from "../../assets/images/flag2.png";
 import jacket from "../../assets/images/jacket.png";
 import block1 from "../../assets/images/block1.png";
+import block2 from "../../assets/images/block2.png";
 import form1 from "../../assets/images/form1.svg";
 import form2 from "../../assets/images/form2.svg";
 import form3 from "../../assets/images/form3.svg";
 import form4 from "../../assets/images/form4.svg";
 import form5 from "../../assets/images/form5.svg";
+import steps1 from "../../assets/images/steps1.png";
+import steps2 from "../../assets/images/steps2.png";
+import steps3 from "../../assets/images/steps3.png";
+import steps4 from "../../assets/images/steps4.png";
+import choice1 from "../../assets/images/choice1.svg";
+import choice2 from "../../assets/images/choice2.svg";
+import choice3 from "../../assets/images/choice3.svg";
+import reviews1 from "../../assets/images/reviews1.png";
+import reviews2 from "../../assets/images/reviews2.png";
+import reviews3 from "../../assets/images/reviews3.png";
+import reviews4 from "../../assets/images/reviews4.png";
+import stars from "../../assets/images/stars.svg";
+import mail from "../../assets/images/follow.svg";
+
 
 SwiperCore.use([ Navigation ]);
 
@@ -221,6 +236,147 @@ function Home() {
                 </div>
               </div>
               <Button text='Рассчитать'></Button>
+            </form>
+          </div>
+        </section>
+        <section className="steps">
+          <div className="container steps__container">
+            <Title classes={'title steps-title'} text='4 простых шага для ваших покупок в Великобритании'></Title>
+            <div className="steps__cards">
+              <div className="steps__card">
+                <img src={steps1} alt="steps1" className="steps__card-img" />
+                <h4 className="steps__card-title">вы ВЫБИРАЕТЕ <br /> ТОВАР</h4>
+                <p className="steps__card-subtitle">в английском магазине, оплачиваете и <br /> указываете адрес склада OkeyPost</p>
+              </div>
+              <div className="steps__card">
+                <img src={steps2} alt="steps1" className="steps__card-img" />
+                <h4 className="steps__card-title">ПОКУПКИ ПРИХОДЯТ <br /> НА СКЛАД</h4>
+                <p className="steps__card-subtitle">и появляются в вашем личном <br /> кабинете на нашем сайте</p>
+              </div>
+              <div className="steps__card">
+                <img src={steps3} alt="steps1" className="steps__card-img" />
+                <h4 className="steps__card-title">ОТПРАВЛЯЕМ ИХ <br /> К ВАМ ДОМОЙ</h4>
+                <p className="steps__card-subtitle">в надежной упаковке, по выгодной <br /> цене и очень быстро</p>
+              </div>
+              <div className="steps__card">
+                <img src={steps4} alt="steps1" className="steps__card-img" />
+                <h4 className="steps__card-title">ЗАБИРАЕТЕ <br /> свою ПОСЫЛКУ</h4>
+                <p className="steps__card-subtitle">в пункте выдачи, на почте <br /> или с курьером</p>
+              </div>
+            </div>
+            <div className="steps-text">Не хотите разбираться самостоятельно, наши мастера шопинга с радостью купят все товары за вас.</div>
+            <Button text='Быстрая покупка'></Button>
+          </div>
+        </section>
+        <Block 
+          img={block2} 
+          titleClasses={'block-title block-title--small'} 
+          title='Виртуальный тур по нашему складу в реальном времени' 
+          subtitle='Вы можете всегда посмотреть на нашу слаженую работу на складе'
+        >
+        </Block>
+        <section className="choice">
+          <div className="container choice__container">
+            <Title classes={'title choice-title'} text='120 000 довольных клиентов в России уже сделали свой выбор'></Title>
+            <h5 className="choice-subtitle">За последний год десятки тысяч наших клиентов заказали товары из Англии и оставили 19 633 отзыва</h5>
+            <div className="choice__cards">
+              <div className="choice__card">
+                <img src={choice1} className="choice__card-img" />
+                <div className="choice__card-text">
+                  <h6 className="choice__card-title">Больше не значит дороже</h6>
+                  <p className="choice__card-subtitle">С ростом веса посылки цена за каждые 0.5 кг уменьшается в прогрессии.</p>
+                </div>
+              </div>
+              <div className="choice__card">
+                <img src={choice2} className="choice__card-img" />
+                <div className="choice__card-text">
+                  <h6 className="choice__card-title">Быстрая обработка посылок</h6>
+                  <p className="choice__card-subtitle">Посылка обрабатывается не дольше 48 часов после поступления на склад.</p>
+                </div>
+              </div>
+              <div className="choice__card">
+                <img src={choice3} className="choice__card-img" />
+                <div className="choice__card-text">
+                  <h6 className="choice__card-title">SMS-уведомления</h6>
+                  <p className="choice__card-subtitle">Отслеживайте весь процесс с помощью sms-уведомлений.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="reviews">
+          <div className="container reviews__container">
+            <Title classes={'title reviews-title'} text='Отзывы и цитаты блогеров:'></Title>
+            <div className="reviews__cards">
+              <div className="reviews__card">
+                <div className="reviews__card-img" style={{ backgroundImage: `url(${reviews1})` }}></div>
+                <div className="reviews__card__content">
+                  <div className="reviews__card-review">
+                    <h5 className="reviews__card-title">NIKOLAY S</h5>
+                    <img src={stars} alt="" className="reviews__card-stars" />
+                    <p className="reviews__card-text">Ваша доставка самая быстрая и дешёвая!!!</p>
+                  </div>
+                  <div className="reviews__card-info">
+                    <p className="reviews__card-date">Дата: <span>16 Ноября 2021</span></p>
+                    <p className="reviews__card-date">Город: <span>Санкт-Петербург</span></p>
+                  </div>
+                </div>
+              </div>
+              <div className="reviews__card">
+                <div className="reviews__card-img" style={{ backgroundImage: `url(${reviews2})` }}></div>
+                <div className="reviews__card__content">
+                  <div className="reviews__card-review">
+                    <h5 className="reviews__card-title">NIKOLAY S</h5>
+                    <img src={stars} alt="" className="reviews__card-stars" />
+                    <p className="reviews__card-text">Ваша доставка самая быстрая и дешёвая!!!</p>
+                  </div>
+                  <div className="reviews__card-info">
+                    <p className="reviews__card-date">Дата: <span>16 Ноября 2021</span></p>
+                    <p className="reviews__card-date">Город: <span>Санкт-Петербург</span></p>
+                  </div>
+                </div>
+              </div>
+              <div className="reviews__card">
+                <div className="reviews__card-img" style={{ backgroundImage: `url(${reviews3})` }}></div>
+                <div className="reviews__card__content">
+                  <div className="reviews__card-review">
+                    <h5 className="reviews__card-title">NIKOLAY S</h5>
+                    <img src={stars} alt="" className="reviews__card-stars" />
+                    <p className="reviews__card-text">Ваша доставка самая быстрая и дешёвая!!!</p>
+                  </div>
+                  <div className="reviews__card-info">
+                    <p className="reviews__card-date">Дата: <span>16 Ноября 2021</span></p>
+                    <p className="reviews__card-date">Город: <span>Санкт-Петербург</span></p>
+                  </div>
+                </div>
+              </div>
+              <div className="reviews__card">
+                <div className="reviews__card-img" style={{ backgroundImage: `url(${reviews4})` }}></div>
+                <div className="reviews__card__content">
+                  <div className="reviews__card-review">
+                    <h5 className="reviews__card-title">NIKOLAY S</h5>
+                    <img src={stars} alt="" className="reviews__card-stars" />
+                    <p className="reviews__card-text">Ваша доставка самая быстрая и дешёвая!!!</p>
+                  </div>
+                  <div className="reviews__card-info">
+                    <p className="reviews__card-date">Дата: <span>16 Ноября 2021</span></p>
+                    <p className="reviews__card-date">Город: <span>Санкт-Петербург</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <Button text='Рассчитать'></Button>
+          </div>
+        </section>
+        <section className="follow">
+          <div className="container follow__container">
+            <form className="follow__form">
+              <h2 className="follow__form-title">Подпишитеть и будьте в курсе всех скидок и акций магазинов Великобритании!</h2>
+              <div className="follow__form-line">
+                    <img src={mail} alt="mail" />  
+                    <input className="follow__form-input" type="text" id="userMail" name="userMail" placeholder="Введите ваш email" />
+              </div>
+              <Button text='Подписаться'></Button>
             </form>
           </div>
         </section>
