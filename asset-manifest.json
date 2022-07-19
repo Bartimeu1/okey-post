@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/okey-post/static/css/main.5d9cec2b.css",
+    "main.css": "/okey-post/static/css/main.0ec35916.css",
     "main.js": "/okey-post/static/js/main.304ce5a0.js",
     "static/media/jacket.png": "/okey-post/static/media/jacket.670807e1fd512f3e02f0.png",
     "static/media/banner.png": "/okey-post/static/media/banner.d1196bc679f5513cd619.png",
@@ -48,11 +48,11 @@
     "static/media/follow.svg": "/okey-post/static/media/follow.f9af4bf183255cda67aadada7f397695.svg",
     "static/media/slider-arrow-l.svg": "/okey-post/static/media/slider-arrow-l.948529eb04909ae5a110.svg",
     "static/media/slider-arrow.svg": "/okey-post/static/media/slider-arrow.ea9b581e09123c1ccdc8.svg",
-    "main.5d9cec2b.css.map": "/okey-post/static/css/main.5d9cec2b.css.map",
+    "main.0ec35916.css.map": "/okey-post/static/css/main.0ec35916.css.map",
     "main.304ce5a0.js.map": "/okey-post/static/js/main.304ce5a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d9cec2b.css",
+    "static/css/main.0ec35916.css",
     "static/js/main.304ce5a0.js"
   ]
 }
